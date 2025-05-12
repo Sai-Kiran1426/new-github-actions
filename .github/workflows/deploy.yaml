@@ -30,7 +30,7 @@ jobs:
 
       - name: Trigger Cloud Build
         run: |
-          gcloud builds submit ./app \
+          gcloud builds submit .\
             --tag us-central1-docker.pkg.dev/saikiran9640/hello-repo2/hello-github-actions
           gcloud run deploy hello-github-actions \
             --image us-central1-docker.pkg.dev/saikiran9640/hello-repo2/hello-github-actions \
